@@ -18,4 +18,10 @@ app.use(cookieParser())
 app.use(morgan())
 
 
+// all router
+import userRoutes from './src/router/user.router.js'
+
+app.use('/api/v1/user' , userRoutes)
+
+
 export default app
